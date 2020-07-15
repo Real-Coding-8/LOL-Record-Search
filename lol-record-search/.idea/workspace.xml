@@ -19,7 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="109907ac-fdae-465f-87af-feae30f8e85a" name="Default Changelist" comment="" />
+    <list default="true" id="109907ac-fdae-465f-87af-feae30f8e85a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/api/GameIdApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/config/HttpConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/controller/RecordSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/domain/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/repository/GameIdSearchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/service/GameIdSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/src/main/java/org/ajou/realcoding8/lolrecordsearch/LolRecordSearchApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/src/test/java/org/ajou/realcoding8/lolrecordsearch/LolRecordSearchApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../weather-crawler" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
