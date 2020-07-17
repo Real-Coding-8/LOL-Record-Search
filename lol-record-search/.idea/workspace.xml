@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="109907ac-fdae-465f-87af-feae30f8e85a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/api/GameIdApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/config/HttpConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/controller/RecordSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/domain/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/repository/GameIdSearchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/service/GameIdSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/src/main/java/org/ajou/realcoding8/lolrecordsearch/LolRecordSearchApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lol-record-search/src/test/java/org/ajou/realcoding8/lolrecordsearch/LolRecordSearchApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1egMFgyWhxwVfRNOneivq7oHhOj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../weather-crawler" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ajou.realcoding8.lolrecordsearch.config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LolRecordSearchApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.ajou.realcoding8.lolrecordsearch.LolRecordSearchApplication" />
+      <module name="lol-record-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ajou.realcoding8.lolrecordsearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LolRecordSearchApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="109907ac-fdae-465f-87af-feae30f8e85a" name="Default Changelist" comment="" />
+      <created>1594738680418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594738680418</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594739777533">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594739777533" />
+    <state x="190" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1594759854635">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="190" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594759854635" />
+    <state x="0" y="59" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594804040161">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="59" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594804040161" />
+    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1594835827271">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594835827271" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1594810580119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594810580119" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1594810580119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594810580119" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1594810580119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594810580119" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1594810580119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594810580119" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1594741820875">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1594741820875" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1594738759085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594738759085" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1594738775573">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594738775573" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594808919272">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594808919272" />
+  </component>
+</project>
