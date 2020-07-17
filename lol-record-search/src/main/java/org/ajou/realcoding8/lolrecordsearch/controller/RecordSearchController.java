@@ -17,8 +17,8 @@ public class RecordSearchController {
     private GameIdSearchService gameIdSearchService;
 
     @GetMapping("/lolrecordsearch/gameidsearch")
-    public List<Long> getGameIds(@RequestParam String encryptedAccountId){
-        List<Long> gameids = gameIdSearchService.getGameIds(encryptedAccountId);
+    public List<Long> getGameIds(@RequestParam String encryptedAccountId, @RequestParam String apiKey){
+        List<Long> gameids = gameIdSearchService.getGameIds(encryptedAccountId, apiKey);
         log.info("Sueccess mapping Matches to GameIds\nGameIds.size() = {}",gameids.size());
 
         return gameids;

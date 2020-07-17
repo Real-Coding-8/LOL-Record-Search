@@ -26,13 +26,13 @@ public class GameIdSearchService {
 
 
     @GetMapping("/lolrecordsearch/gameidsearch")
-    public List<Long> getGameIds(String encryptedAccountId){
+    public List<Long> getGameIds(String encryptedAccountId, String apiKey){
         Match match = new Match();
         if((match = gameIdSearchRepository.findCurrentWeather(encryptedAccountId))!=null) {
             log.info("find in DB");
         }
         else {
-            match = gameIdApiClient.getMatches(encryptedAccountId);
+            match = gameIdApiClient.getMatches(encryptedAccountId, apiKey);
             gameIdSearchRepository.saveMatches(match);
             log.info("save new");
         }
