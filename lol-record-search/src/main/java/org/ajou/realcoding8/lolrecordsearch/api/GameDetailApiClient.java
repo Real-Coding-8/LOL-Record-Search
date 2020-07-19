@@ -15,7 +15,7 @@ public class GameDetailApiClient {
 
     private static final String MATCH_REQUEST_URL = "https://kr.api.riotgames.com/lol/match/v4/matches/{matchId}?api_key={apiKey}";
 
-    public Detail getGameDetail(String matchId, String apiKey) {
+    public Detail getGameDetail(long matchId, String apiKey) {
         Detail detail = restTemplate.getForObject(MATCH_REQUEST_URL, Detail.class, matchId, apiKey);
         log.info("Success finding Game Details about matchId : {}", matchId);
         return detail;

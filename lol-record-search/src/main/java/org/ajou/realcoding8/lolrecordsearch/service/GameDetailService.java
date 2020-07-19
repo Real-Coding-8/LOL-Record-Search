@@ -17,9 +17,9 @@ public class GameDetailService {
     @Autowired
     private GameDetailRepository gameDetailRepository;
 
-    private Detail detail;
 
-    public Detail getGameDetails(String matchId, String apiKey) {
+    public Detail getGameDetails(long matchId, String apiKey) {
+        Detail detail = new Detail();
 
         if((detail = gameDetailRepository.findGameDetail(matchId)) != null) {
             log.info("find in DB");

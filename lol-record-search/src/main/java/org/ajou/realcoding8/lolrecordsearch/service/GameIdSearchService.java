@@ -25,8 +25,6 @@ public class GameIdSearchService {
 
 
 
-
-    @GetMapping("/lolrecordsearch/gameidsearch")
     public List<Long> getGameIds(String encryptedAccountId, String apiKey){
         Match match = new Match();
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());

@@ -16,7 +16,7 @@ public class GameDetailController {
     private GameDetailService gameDetailService;
 
     //@GetMapping("lolrecordsearch/gamedetails")
-    public Detail getGameDetails(@RequestParam String matchId, @RequestParam String apiKey) {
+    public Detail getGameDetails(@RequestParam long matchId, @RequestParam String apiKey) {
         return gameDetailService.getGameDetails(matchId, apiKey);
     }
 }
