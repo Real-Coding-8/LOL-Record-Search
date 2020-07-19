@@ -1,7 +1,6 @@
 package org.ajou.realcoding8.lolrecordsearch.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.ajou.realcoding8.lolrecordsearch.domain.Details;
 import org.ajou.realcoding8.lolrecordsearch.domain.Info;
 import org.ajou.realcoding8.lolrecordsearch.service.GameIdSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,19 +17,6 @@ public class RecordSearchController {
     @Autowired
     private GameIdSearchService gameIdSearchService;
 
-
-    @GetMapping("/lolrecordsearch/gameidsearch")
-    public List<Long> getGameIds(@RequestParam String encryptedAccountId, @RequestParam String apiKey){
-        List<Long> gameids = gameIdSearchService.getGameIds(encryptedAccountId, apiKey);
-        log.info("Sueccess mapping Matches to GameIds\nGameIds.size() = {}",gameids.size());
-
-        return gameids;
-    }
-
-    @GetMapping("/lolrecordsearch/gamedetails")
-    public Details getGameDetails(@RequestParam String matchId, @RequestParam String apiKey) {
-        return gameIdSearchService.getGameDetails(matchId, apiKey);
-    }
 
     @GetMapping("/lolrecordsearch/userinfo")
     public Info getUserInfo(@RequestParam String summonerName, @RequestParam String apiKey){
