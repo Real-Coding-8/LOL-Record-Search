@@ -17,7 +17,7 @@ public class UserInfoSearchController {
 
 
 
-    @GetMapping("/lolrecordsearch/userinfo")
+    //@GetMapping("/lolrecordsearch/userinfo")
     public Info getUserInfo(@RequestParam String summonerName, @RequestParam String apiKey){
         return userInfoSearchService.getUserInfo(summonerName, apiKey);
     }
