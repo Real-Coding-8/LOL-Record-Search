@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 @Slf4j
-public class GameIdApiClient {
+public class UserInfoApi {
     @Autowired  //config에서 주입을 해줬기 때문에 autowired가능.
     RestTemplate restTemplate = new RestTemplate();
 

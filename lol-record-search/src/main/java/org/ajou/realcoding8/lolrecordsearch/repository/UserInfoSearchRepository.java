@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Slf4j
-public class GameIdSearchRepository {
+public class UserInfoSearchRepository {
 
     @Autowired
     private MongoTemplate mongoTemplate;
