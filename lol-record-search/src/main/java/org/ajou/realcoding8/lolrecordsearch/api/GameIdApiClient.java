@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.sql.Time;
+import java.sql.Timestamp;
+
 
 @Service
 @Slf4j
@@ -16,9 +19,12 @@ public class GameIdApiClient {
 
 
     public Match getMatches(String encryptedAccountId, String apiKey){
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+
          Match gameId = restTemplate.getForObject(GAMEID_REQUEST_URI, Match.class, encryptedAccountId, apiKey);
          log.info("Success finding Matches about AccountId : {}",encryptedAccountId);
          gameId.setEncryptedAccountId(encryptedAccountId);
+         gameId.setSavetime(timestamp.getTime());
         return gameId;
     }
 }

@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.sql.Timestamp;
 import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -28,7 +29,9 @@ public class GameIdSearchService {
     @GetMapping("/lolrecordsearch/gameidsearch")
     public List<Long> getGameIds(String encryptedAccountId, String apiKey){
         Match match = new Match();
-        if((match = gameIdSearchRepository.findCurrentWeather(encryptedAccountId))!=null) {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        if((match = gameIdSearchRepository.findCurrentWeather(encryptedAccountId))!=null
+                &&(timestamp.getTime()-match.getSavetime()<600000)) {
             log.info("find in DB");
         }
         else {
