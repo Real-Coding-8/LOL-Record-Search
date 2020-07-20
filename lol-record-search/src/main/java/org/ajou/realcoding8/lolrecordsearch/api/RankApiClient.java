@@ -12,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class RankApiClient {
     @Autowired
     private RestTemplate restTemplate;
+
     private static final String RANK_REQUEST_URI = "https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/{encryptedSummonerId}?api_key={apiKey}";
 
     public Rank[] getAllRank(String encryptedSummonerId, String apiKey){

@@ -1,3 +1,4 @@
+
 package org.ajou.realcoding8.lolrecordsearch.domain;
 
 import lombok.Data;

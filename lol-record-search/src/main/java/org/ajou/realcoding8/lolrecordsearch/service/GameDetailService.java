@@ -17,15 +17,16 @@ public class GameDetailService {
     @Autowired
     private GameDetailRepository gameDetailRepository;
 
-    private Detail detail;
 
-    public Detail getGameDetails(String matchId, String apiKey) {
+    public Detail getGameDetails(long gameId, String apiKey) {
+        Detail detail = new Detail();
+        detail = gameDetailRepository.findGameDetail(gameId);
 
-        if((detail = gameDetailRepository.findGameDetail(matchId)) != null) {
+        if(detail != null) {
             log.info("find in DB");
         }
         else {
-            detail = gameDetailApiClient.getGameDetail(matchId, apiKey);
+            detail = gameDetailApiClient.getGameDetail(gameId, apiKey);
             gameDetailRepository.saveGameDetail(detail);
             log.info("save new");
         }

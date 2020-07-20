@@ -21,7 +21,7 @@ public class GameIdSearchRepository {
 
     public Match findCurrentWeather(String encryptedAccountId){
         Query query = Query.query(
-                Criteria.where("EncryptedAccountId").is(encryptedAccountId)
+                Criteria.where("_id").is(encryptedAccountId)
         );
         Match match = mongoTemplate.findOne(query, Match.class);
         return match;

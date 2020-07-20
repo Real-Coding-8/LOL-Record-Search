@@ -1,12 +1,15 @@
 package org.ajou.realcoding8.lolrecordsearch.domain;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 import java.util.List;
 
 @Data
 public class Match {
-    private String EncryptedAccountId;
+    @Id
+    private String encryptedAccountId;
+    private long savetime;
     private List<Match_> matches;
     /*
     private long startIndex;
