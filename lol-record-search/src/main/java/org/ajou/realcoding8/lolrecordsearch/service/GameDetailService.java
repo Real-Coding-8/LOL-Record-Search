@@ -23,12 +23,12 @@ public class GameDetailService {
         detail = gameDetailRepository.findGameDetail(gameId);
 
         if(detail != null) {
-            log.info("find in DB");
+            log.info("find GameDetail in DB");
         }
         else {
             detail = gameDetailApiClient.getGameDetail(gameId, apiKey);
             gameDetailRepository.saveGameDetail(detail);
-            log.info("save new");
+            log.info("save GameDetail");
         }
         return detail;
     }

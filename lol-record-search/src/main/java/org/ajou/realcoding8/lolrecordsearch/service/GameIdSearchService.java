@@ -30,12 +30,12 @@ public class GameIdSearchService {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         if((match = gameIdSearchRepository.findCurrentWeather(encryptedAccountId))!=null
                 &&(timestamp.getTime()-match.getSavetime()<600000)) {
-            log.info("find in DB");
+            log.info("find GameIds in DB");
         }
         else {
             match = gameIdApiClient.getMatches(encryptedAccountId, apiKey);
             gameIdSearchRepository.saveMatches(match);
-            log.info("save new");
+            log.info("save GameIds");
         }
 
         return match.getMatches().stream()

@@ -18,7 +18,7 @@ public class UserInfoSearchRepository {
 
     public Info findUserInfo(String summonerName) {
         Query query = Query.query(
-                Criteria.where("name").is(summonerName)
+                Criteria.where("_id").is(summonerName)
         );
         Info info = mongoTemplate.findOne(query, Info.class);
         return info;

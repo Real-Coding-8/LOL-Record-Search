@@ -22,9 +22,9 @@ public class ResultRepository {
     }
 
 
-    public Result findResult(long gameId) {
+    public Result findResult(long id) {
         Query query = Query.query(
-                Criteria.where("gameId").is(gameId)
+                Criteria.where("_id").is(id)
         );
         Result result = mongoTemplate.findOne(query, Result.class);
         return result;

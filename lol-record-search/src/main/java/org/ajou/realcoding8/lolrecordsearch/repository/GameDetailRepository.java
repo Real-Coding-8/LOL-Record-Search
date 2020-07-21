@@ -21,7 +21,7 @@ public class GameDetailRepository {
 
     public Detail findGameDetail(long gameId) {
         Query query = Query.query(
-                Criteria.where("gameId").is(gameId)
+                Criteria.where("_id").is(gameId)
         );
         Detail detail = mongoTemplate.findOne(query, Detail.class);
         return detail;
