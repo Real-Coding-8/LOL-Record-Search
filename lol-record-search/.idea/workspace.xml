@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="109907ac-fdae-465f-87af-feae30f8e85a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/service/DefaultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/LolRecordSearchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/LolRecordSearchApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/api/GameIdApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/api/GameIdApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/controller/RecordSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/controller/RecordSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/domain/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/domain/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/repository/GameIdSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/repository/GameIdSearchRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/service/GameIdSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ajou/realcoding8/lolrecordsearch/service/GameIdSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="109907ac-fdae-465f-87af-feae30f8e85a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1egMFgyWhxwVfRNOneivq7oHhOj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../lol-record-search" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../aju/LOL-Record-Search/lol-record-search" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -119,30 +109,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="190" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594759854635" />
-    <state x="0" y="59" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594804040161">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594978505524">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="59" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594804040161" />
-    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1595174318227">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594978505524" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1594981212073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595174318227" />
-    <state width="1493" height="146" key="GridCell.Tab.0.bottom" timestamp="1595175266202">
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594981212073" />
+    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1595264053119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595175266202" />
-    <state width="1493" height="146" key="GridCell.Tab.0.center" timestamp="1595175266202">
+    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595264053119" />
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1595263266890">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595175266202" />
-    <state width="1493" height="146" key="GridCell.Tab.0.left" timestamp="1595175266202">
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595263266890" />
+    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1595263266890">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595175266202" />
-    <state width="1493" height="146" key="GridCell.Tab.0.right" timestamp="1595175266202">
+    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595263266890" />
+    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1595263266890">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="146" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595175266202" />
+    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595263266890" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1595263266890">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595263266890" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1594741820875">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -151,10 +145,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594965365336" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1594738775573">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1595256034533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594738775573" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1595256034533" />
     <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594808919272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

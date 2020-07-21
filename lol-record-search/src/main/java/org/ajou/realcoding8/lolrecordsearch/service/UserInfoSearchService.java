@@ -19,7 +19,8 @@ public class UserInfoSearchService {
 
     public Info getUserInfo(String summonerName, String apiKey) {
         Info info = new Info();
-        if((info = userInfoSearchRepository.findUserInfo(summonerName)) != null) {
+        info = userInfoSearchRepository.findUserInfo(summonerName);
+        if(info != null) {
             log.info("find in DB");
             return info;
         }
