@@ -20,12 +20,13 @@ public class UserInfoSearchService {
     public Info getUserInfo(String summonerName, String apiKey) {
         Info info = new Info();
         if((info = userInfoSearchRepository.findUserInfo(summonerName)) != null) {
-            log.info("find in DB");
+            log.info("Find the information in DB");
             return info;
         }
         else {
             info = userInfoApi.getUserInfo(summonerName, apiKey);
             userInfoSearchRepository.saveUserInfo(info);
+            log.info("Save new information");
             return info;
         }
 

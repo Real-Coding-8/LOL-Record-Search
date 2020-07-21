@@ -74,64 +74,73 @@ public class DefaultService {
          */
 
         for(int i = 0; i < 5; i++) { // 최근 5경기를 받아 와야 한다.
-            Result result = new Result();
+            long gameId = gameIds.get(i);
 
             // step 5
-            double randomNum = Math.random() * 100; // 100개의 게임 중 랜덤으로 하나를 고르기 위한 변수
-            Detail detail = gameDetailController.getGameDetails(gameIds.get((int)randomNum), apiKey);
+            Detail detail = gameDetailController.getGameDetails(gameId, apiKey);
 
-            result.setGameId(detail.getGameId());
+            // result domain 안에 matchId가 있는지 check
+            Result result = resultRepository.findResult(gameId);
 
-            for(int k = 0; k < 10; k++) {
+            if(result == null) {
+                result = new Result();
+                result.setGameId(detail.getGameId());
+                for(int k = 0; k < 10; k++) {
 
-                // 10명의 참가자 중 입력한 소환사의 이름과 같은 participantId를 찾는다.
-                if(detail.getParticipantIdentities().get(k).getPlayer().getSummonerName().equals(rank.getSummonerName())) { // step 3가 필요
-                    findSummonerParticipantId = detail.getParticipantIdentities().get(k).getParticipantId();
+                    // 10명의 참가자 중 입력한 소환사의 이름과 같은 participantId를 찾는다.
+                    if(detail.getParticipantIdentities().get(k).getPlayer().getSummonerName().equals(rank.getSummonerName())) { // step 3가 필요
+                        findSummonerParticipantId = detail.getParticipantIdentities().get(k).getParticipantId();
 
-                    // Q1
-                    log.info("{}'s ParticipantId : {}", rank.getSummonerName(), findSummonerParticipantId);
-                    result.setParticipantId(findSummonerParticipantId);
-                }
-
-            }
-
-            for(int j = 0; j < 10; j++) {
-
-                if(detail.getParticipants().get(j).getParticipantId() == findSummonerParticipantId) {
-                    // Q2
-                    teamId = detail.getParticipants().get(j).getTeamId();
-                    log.info("{}'s team : {}", rank.getSummonerName(), teamId);
-                    result.setTeamId(teamId);
-
-                    // Q3
-                    findWin = detail.getParticipants().get(j).getStats().isWin();
-                    log.info("{}'s team is {}", rank.getSummonerName(), findWin);
-                    result.setWin(findWin);
-
-                    // Q4
-                    championId = detail.getParticipants().get(j).getChampionId();
-                    log.info("{}'s championId : {}", rank.getSummonerName(), championId);
-                    result.setChampionId(championId);
-
-                    // Q5
-                    kills = detail.getParticipants().get(j).getStats().getKills();
-                    deaths = detail.getParticipants().get(j).getStats().getDeaths();
-                    assists = detail.getParticipants().get(j).getStats().getAssists();
-
-                    log.info("{}'s kills : {}", rank.getSummonerName(), kills);
-                    log.info("{}'s deaths : {}", rank.getSummonerName(), deaths);
-                    log.info("{}'s assists : {}", rank.getSummonerName(), assists);
-
-                    result.setKills(kills);
-                    result.setDeaths(deaths);
-                    result.setAssists(assists);
-                    result.setID(result.getGameId()*100+result.getParticipantId());
+                        // Q1
+                        //log.info("{}'s ParticipantId : {}", rank.getSummonerName(), findSummonerParticipantId);
+                        result.setParticipantId(findSummonerParticipantId);
+                    }
 
                 }
+
+                for(int j = 0; j < 10; j++) {
+
+                    if(detail.getParticipants().get(j).getParticipantId() == findSummonerParticipantId) {
+                        // Q2
+                        teamId = detail.getParticipants().get(j).getTeamId();
+                        //log.info("{}'s team : {}", rank.getSummonerName(), teamId);
+                        result.setTeamId(teamId);
+
+                        // Q3
+                        findWin = detail.getParticipants().get(j).getStats().isWin();
+                        //log.info("{}'s team is {}", rank.getSummonerName(), findWin);
+                        result.setWin(findWin);
+
+                        // Q4
+                        championId = detail.getParticipants().get(j).getChampionId();
+                        //log.info("{}'s championId : {}", rank.getSummonerName(), championId);
+                        result.setChampionId(championId);
+
+                        // Q5
+                        kills = detail.getParticipants().get(j).getStats().getKills();
+                        deaths = detail.getParticipants().get(j).getStats().getDeaths();
+                        assists = detail.getParticipants().get(j).getStats().getAssists();
+
+                        //log.info("{}'s kills : {}", rank.getSummonerName(), kills);
+                        //log.info("{}'s deaths : {}", rank.getSummonerName(), deaths);
+                        //log.info("{}'s assists : {}", rank.getSummonerName(), assists);
+
+                        result.setKills(kills);
+                        result.setDeaths(deaths);
+                        result.setAssists(assists);
+                    }
+                }
+
+                finalResultList.add(result);
+                resultRepository.saveResult(result);
+                log.info("({}th)save final result in DB (gameId : {})", i+1, detail.getGameId());
             }
 
-            finalResultList.add(result);
-            resultRepository.saveResult(result);
+            else {
+                log.info("({}th)find in DB(Result)", i+1);
+                finalResultList.add(i, result);
+            }
+
         }
         return finalResultList;
     }
