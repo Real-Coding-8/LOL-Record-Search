@@ -45,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../aju/LOL-Record-Search/lol-record-search" />
+
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -110,6 +111,7 @@
     </state>
     <state x="190" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594759854635" />
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594978505524">
+
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594978505524" />
@@ -141,14 +143,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1594741820875" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1594965365336">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="311" y="0" key="SettingsEditor" timestamp="1595296202777">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594965365336" />
     <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1595256034533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1595256034533" />
+
     <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594808919272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
