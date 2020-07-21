@@ -15,8 +15,8 @@ public class RankController {
     @Autowired
     private RankService rankService;
 
-    @GetMapping("/rank-service/rank")
-    public Rank getRank(@RequestParam String encryptedSummonerId) {
-        return rankService.getSoloRank(encryptedSummonerId);
+    //@GetMapping("/rank-service/rank")
+    public Rank getRank(@RequestParam String encryptedSummonerId, @RequestParam String apiKey) {
+        return rankService.getSoloRank(encryptedSummonerId, apiKey);
     }
 }

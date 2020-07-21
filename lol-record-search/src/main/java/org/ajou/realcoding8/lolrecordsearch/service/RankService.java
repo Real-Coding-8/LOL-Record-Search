@@ -16,8 +16,8 @@ public class RankService {
     @Autowired
     private RankRepository rankRepository;
 
-    public Rank getSoloRank(String encryptedSummonerId) {
-        Rank[] ranks = rankApiClient.getAllRank(encryptedSummonerId);
+    public Rank getSoloRank(String encryptedSummonerId, String apiKey) {
+        Rank[] ranks = rankApiClient.getAllRank(encryptedSummonerId, apiKey);
         for(Rank rank : ranks){
             if (rank.getQueueType().equals("RANKED_SOLO_5x5")){
                 log.info("solo rank tier: {}",rank.getTier());

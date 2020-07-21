@@ -1,30 +1,32 @@
 package org.ajou.realcoding8.lolrecordsearch.repository;
 
 import lombok.extern.slf4j.Slf4j;
-import org.ajou.realcoding8.lolrecordsearch.domain.Detail;
+import org.ajou.realcoding8.lolrecordsearch.domain.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 @Slf4j
-public class GameDetailRepository {
-
+public class ResultRepository {
     @Autowired
     private MongoTemplate mongoTemplate;
 
-    public void saveGameDetail(Detail detail) {
-        mongoTemplate.save(detail);
+    public void saveResult(Result finalResult) {
+
+        mongoTemplate.save(finalResult);
     }
 
-    public Detail findGameDetail(long gameId) {
+
+    public Result findResult(long gameId) {
         Query query = Query.query(
                 Criteria.where("gameId").is(gameId)
         );
-        Detail detail = mongoTemplate.findOne(query, Detail.class);
-        return detail;
+        Result result = mongoTemplate.findOne(query, Result.class);
+        return result;
     }
-
 }
