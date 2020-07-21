@@ -50,8 +50,9 @@ public class DefaultService {
     public int getParticipantId(String SummonerName, long gameId, String apiKey) {
         Detail detail = gameDetailService.getGameDetails(gameId, apiKey);
         int participantId = 0;
+        String accountId = userInfoSearchService.getUserInfo(SummonerName,apiKey).getAccountId();
         for (Detail.ParticipantIdentities p : detail.getParticipantIdentities()) {
-            if (p.getPlayer().getSummonerName().equals(SummonerName)) {
+            if (p.getPlayer().getAccountId().equals(accountId)) {
                 participantId = p.getParticipantId();
             }
         }
