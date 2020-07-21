@@ -9,6 +9,7 @@ public class Rank {
     private String queueType;
     private String tier;
     private String rank;
+    private long savetime;
     @Id
     private String summonerId;
     private String summonerName;
