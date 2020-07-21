@@ -17,7 +17,6 @@ public class UserInfoApi {
 
     public Info getUserInfo(String summonerName, String apiKey){
         Info info = restTemplate.getForObject(USERINFO_REQUEST_URL, Info.class, summonerName, apiKey);
-        log.info("Asdasd");
         return info;
     }
 
