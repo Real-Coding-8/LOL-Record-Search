@@ -1,6 +1,7 @@
 package org.ajou.realcoding8.lolrecordsearch.repository;
 
 import lombok.extern.slf4j.Slf4j;
+import org.ajou.realcoding8.lolrecordsearch.domain.FinalResults;
 import org.ajou.realcoding8.lolrecordsearch.domain.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -21,6 +22,9 @@ public class ResultRepository {
         mongoTemplate.save(finalResult);
     }
 
+    public void saveFinalResults(FinalResults finalResults){
+        mongoTemplate.save(finalResults);
+    }
 
     public Result findResult(long id) {
         Query query = Query.query(

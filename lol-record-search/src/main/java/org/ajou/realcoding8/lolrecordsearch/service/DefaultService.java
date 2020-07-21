@@ -5,10 +5,7 @@ import org.ajou.realcoding8.lolrecordsearch.controller.GameDetailController;
 import org.ajou.realcoding8.lolrecordsearch.controller.RankController;
 import org.ajou.realcoding8.lolrecordsearch.controller.RecordSearchController;
 import org.ajou.realcoding8.lolrecordsearch.controller.UserInfoSearchController;
-import org.ajou.realcoding8.lolrecordsearch.domain.Detail;
-import org.ajou.realcoding8.lolrecordsearch.domain.Info;
-import org.ajou.realcoding8.lolrecordsearch.domain.Rank;
-import org.ajou.realcoding8.lolrecordsearch.domain.Result;
+import org.ajou.realcoding8.lolrecordsearch.domain.*;
 import org.ajou.realcoding8.lolrecordsearch.repository.ResultRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -88,21 +85,36 @@ public class DefaultService {
             resultRepository.saveResult(finalresult);
 
             log.info("save final result in DB (resutId : {})", finalresult.getResultid());
-            log.info("success getFinalresults about {}",gameId);
+            log.info("success getFinalresults about {}",resultId);
         }
         return finalresult;
     }
 
 
-    public List<Result> getUserInfo( String summonerName, String apiKey) {
+    public FinalResults recordsearch( String summonerName, String apiKey) {
         List<Result> finalResultList = new ArrayList<>(5);
-        String accountId = userInfoSearchService.getUserInfo(summonerName,apiKey).getAccountId();
+        Info info = userInfoSearchService.getUserInfo(summonerName,apiKey);
+        String accountId = info.getAccountId();
+        String Id = info.getId();
         List<Long> gameId = gameIdSearchService.getGameIds(accountId,apiKey);
         List<Long> gameId_5 = gameId.subList(0,5);
 
         for(Long i : gameId_5)
             finalResultList.add(getFinalresult_(summonerName,i,apiKey));
 
-        return finalResultList;
+        Rank rank = rankService.getSoloRank(Id,apiKey);
+        FinalResults finalResults = new FinalResults();
+
+        finalResults.setSummonerName(rank.getSummonerName());
+        finalResults.setResults(finalResultList);
+        finalResults.setLeaguePoints(rank.getLeaguePoints());
+        finalResults.setLosses(rank.getLosses());
+        finalResults.setRank(rank.getRank());
+        finalResults.setTier(rank.getTier());
+        finalResults.setWins(rank.getWins());
+
+        resultRepository.saveFinalResults(finalResults);
+
+        return finalResults;
     }
 }

@@ -3,20 +3,17 @@ package org.ajou.realcoding8.lolrecordsearch.domain;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 @Data
-public class Rank {
-    private String leagueId;
-    private String queueType;
+public class FinalResults {
     private String tier;
     private String rank;
     @Id
-    private String summonerId;
     private String summonerName;
     private int leaguePoints;
     private int wins;
     private int losses;
-    private boolean veteran;
-    private boolean inactive;
-    private boolean freshBlood;
-    private boolean hotStreak;
+    private List<Result> results;
+
 }
