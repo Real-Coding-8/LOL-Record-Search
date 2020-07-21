@@ -10,6 +10,7 @@ public class Info {
     private String accountId;
     private String puuid;
     @Id
+    private String realname;
     private String name;
     private int profileIconId;
     private long revisionDate;

@@ -15,10 +15,9 @@ public class UserInfoSearchRepository {
     @Autowired
     private MongoTemplate mongoTemplate;
 
-
-    public Info findUserInfo(String summonerName) {
+    public Info findUserInfo(String summoner_real_Name) {
         Query query = Query.query(
-                Criteria.where("_id").is(summonerName)
+                Criteria.where("_id").is(summoner_real_Name)
         );
         Info info = mongoTemplate.findOne(query, Info.class);
         return info;

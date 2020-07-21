@@ -16,15 +16,22 @@ public class UserInfoSearchService {
     @Autowired
     private UserInfoSearchRepository userInfoSearchRepository;
 
+    public String toLowerandNotBlank(String summonerName){
+        summonerName = summonerName.toLowerCase();
+        summonerName = summonerName.replaceAll(" " , "");
+        summonerName = summonerName.replaceAll("\\p{Z}", "");
+        return summonerName;
+    }
 
     public Info getUserInfo(String summonerName, String apiKey) {
         Info info = new Info();
-        if((info = userInfoSearchRepository.findUserInfo(summonerName)) != null) {
+        if((info = userInfoSearchRepository.findUserInfo(toLowerandNotBlank(summonerName))) != null) {
             log.info("Find the information in DB");
             return info;
         }
         else {
             info = userInfoApi.getUserInfo(summonerName, apiKey);
+            info.setRealname(summonerName);
             userInfoSearchRepository.saveUserInfo(info);
             log.info("Save new information");
             return info;

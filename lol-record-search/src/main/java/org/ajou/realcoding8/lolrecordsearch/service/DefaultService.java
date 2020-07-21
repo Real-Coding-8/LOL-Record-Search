@@ -81,7 +81,9 @@ public class DefaultService {
             finalresult.setAssists(participants.getStats().getAssists());
             finalresult.setDeaths(participants.getStats().getDeaths());
             finalresult.setWin(participants.getStats().isWin());
-            finalresult.setResultid(detail.getGameId()*100+participantId);
+            finalresult.setGameId(detail.getGameId());
+            finalresult.setResultid(resultId);
+
 
             resultRepository.saveResult(finalresult);
 
